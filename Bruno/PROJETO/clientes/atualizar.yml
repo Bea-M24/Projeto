@@ -1,0 +1,25 @@
+info:
+  name: atualizar
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: localhost:8080/clientes/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Beatriz",
+        "email": "beatriz@gmail.com",
+        "telefone": "7199999-9999",
+        "endereco": "Salvador"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

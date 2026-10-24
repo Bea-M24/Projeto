@@ -1,0 +1,25 @@
+info:
+  name: salvar
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: localhost:8080/servicos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Banho",
+        "descricao": "Banho completo no pet",
+        "preco": 100.00,
+        "duracaoMinutos": 60
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

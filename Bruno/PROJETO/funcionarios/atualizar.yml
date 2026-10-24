@@ -1,0 +1,25 @@
+info:
+  name: atualizar
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: localhost:8080/funcionarios/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Gabriele",
+        "cargo": "Atendente",
+        "email": "Gabriele@gmail.com",
+        "dataAdmissao": "24/10/2026"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

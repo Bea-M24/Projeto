@@ -1,0 +1,25 @@
+info:
+  name: atualizar
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: localhost:8080/servicos/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Banho",
+        "descricao": "Banho completo no pet",
+        "preco": 130.00,
+        "duracaoMinutos": 60
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

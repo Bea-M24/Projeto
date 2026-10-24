@@ -1,0 +1,25 @@
+info:
+  name: atualizar
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: localhost:8080/fornecedores/1
+  body:
+    type: json
+    data: |-
+      {
+        "razaoSocial": "SenaiPetshop Distribuidora",
+        "cnpj": "123456789101112",
+        "email": "pet@gmail.com",
+        "telefone": "7199999-9999"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

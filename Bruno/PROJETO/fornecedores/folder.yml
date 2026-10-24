@@ -1,0 +1,7 @@
+info:
+  name: fornecedores
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit
